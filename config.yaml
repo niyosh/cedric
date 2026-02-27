@@ -1,0 +1,49 @@
+general:
+  threads: 10
+  profile: aggressive   # stealth | normal | aggressive
+
+  nmap:
+    path: "C:/Program Files (x86)/Nmap/nmap.exe"
+    timeout: 600
+    save_raw_xml: false
+
+
+modules:
+
+  ftp:
+    enabled: true
+    timeout: 5
+
+    brute_force:
+      max_attempts: 30
+      delay: 0.5
+
+    credentials:
+      users: ["ftp", "admin"]
+      passwords: ["ftp", "admin", "password"]
+
+
+  ssh:
+    enabled: true
+    timeout: 5
+
+    brute_force:
+      max_attempts: 30
+      delay: 0.5
+
+    credentials:
+      users: ["root", "admin"]
+      passwords: ["root", "admin", "password"]
+
+
+  smtp:
+    enabled: true
+    timeout: 5
+
+    brute_force:
+      max_attempts: 50
+      delay: 0.5
+
+    credentials:
+      users: ["admin", "test"]
+      passwords: ["admin", "password", "123456"]
