@@ -1,7 +1,6 @@
-# core/logger.py
-
 import logging
 import os
+import sys
 
 
 def setup_logger(level="INFO"):
@@ -16,14 +15,22 @@ def setup_logger(level="INFO"):
         datefmt="%Y-%m-%d %H:%M:%S"
     )
 
-    # File handler
-    file_handler = logging.FileHandler("logs/scan.log")
+    # --------------------------------------------------
+    # FILE HANDLER (UTF-8 SAFE)
+    # --------------------------------------------------
+    file_handler = logging.FileHandler(
+        "logs/scan.log",
+        encoding="utf-8"
+    )
     file_handler.setFormatter(formatter)
 
-    # Console handler
-    console_handler = logging.StreamHandler()
+    # --------------------------------------------------
+    # CONSOLE HANDLER (UTF-8 SAFE FOR WINDOWS)
+    # --------------------------------------------------
+    console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setFormatter(formatter)
 
+    # Prevent duplicate handlers
     if not logger.handlers:
         logger.addHandler(file_handler)
         logger.addHandler(console_handler)

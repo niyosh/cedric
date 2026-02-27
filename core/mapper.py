@@ -45,7 +45,7 @@ def build_nmap_command(target):
         args = ["-sS", "-T2", "-Pn", "--open"]
 
     elif GLOBAL_PROFILE == "aggressive":
-        args = ["-sV", "-sC", "-O", "-Pn", "--open"]
+        args = ["-sV", "-Pn", "--open", "-p 21,22,25"]
 
     else:
         args = ["-sV", "-Pn", "--open"]
