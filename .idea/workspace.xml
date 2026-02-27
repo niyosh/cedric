@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="295c42a5-0c78-4af5-ad1c-2f15689bfc31" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/mapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/scoring.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/scoring.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ftp.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ftp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/smtp.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/smtp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ssh.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ssh.py" afterDir="false" />
+    <list default="true" id="295c42a5-0c78-4af5-ad1c-2f15689bfc31" name="Changes" comment="ssh, smtp, ftp - done">
+      <change beforePath="$PROJECT_DIR$/core/html_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/html_report.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772200062744</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ssh, smtp, ftp - done">
+      <option name="closed" value="true" />
+      <created>1772209936054</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772209936054</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +117,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="ssh, smtp, ftp - done" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssh, smtp, ftp - done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Cedric$main.coverage" NAME="main Coverage Results" MODIFIED="1771862933392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
